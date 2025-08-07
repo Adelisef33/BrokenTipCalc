@@ -9,10 +9,11 @@ namespace TipCalculator.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            
             ViewBag.Fifteen = 0;
             ViewBag.Twenty = 0;
-            Viewbag.TwentyFive = 0;
-            View();
+            ViewBag.TwentyFive = 0;
+            return View();           
         }
 
         [HttpPost]
